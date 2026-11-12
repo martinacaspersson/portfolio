@@ -11,6 +11,9 @@ Responsiv one-page-portfolio i HTML och vanlig CSS (plus en liten JS-fil) byggd 
 | Innehåll | Desktopversionens text används på alla skärmstorlekar. Platshållare ("Title", lorem ipsum) ligger kvar tills de byts ut |
 | Interaktion | Lite JavaScript: pilarna bläddrar i projektkarusellen, Menu-knappen öppnar/stänger mobilmenyn |
 | Repo | Lokalt git-repo, commit efter varje steg |
+| Mobilmeny | Enligt komponenten *Navigation / Mobile, Open=True*: "Close" uppe till höger, länkarna Case / About / Contact i 40px under |
+| Länkar | Case / About / Contact behöver inte leda någonstans |
+| Responsivitet | Mobile first. Grid 6 kolumner / 16px marginal under 768px, 12 kolumner / 24px från 768px. Textstorlekar skalar flytande med `clamp()` så de blir exakt Figmas värden vid 375px och 1440px |
 
 ## Designtokens från Figma
 
@@ -27,7 +30,8 @@ Responsiv one-page-portfolio i HTML och vanlig CSS (plus en liten JS-fil) byggd 
 | Body | Satoshi Regular 20px |
 | Link S | Satoshi Regular 20px, line-height 1 |
 
-Mobilmåtten (375px-ramen) hämtas sektion för sektion från Figma när vi bygger respektive del.
+Mobil (375px): grid 6 kolumner, marginal 16px, gap 16px, hörnradie 2px, Heading 40px, Subheading 28px,
+Body 16px, Link S 16px, Link L 40px (öppen meny).
 
 ## Sidans sektioner (ordning)
 
@@ -63,13 +67,11 @@ portfolio/
 
 Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 1440px) och gör en commit.
 
-- [ ] **Steg 0 – Plan och repo**: den här planen, `git init`, första commit.
-- [ ] **Steg 1 – Grund**: filstruktur, `index.html`-skelett med semantiska sektioner, CSS-reset,
+- [x] **Steg 0 – Plan och repo**: den här planen, `git init`, första commit.
+- [x] **Steg 1 – Grund**: filstruktur, `index.html`-skelett med semantiska sektioner, CSS-reset,
   CSS-variabler för tokens, `@font-face` för Safiro, Satoshi via Fontshare, grid-system
   (mobile first, brytpunkt för desktop), exportera alla bilder från Figma till `assets/images/`.
-  *Behöver: Safiro-filerna från dig.*
-- [ ] **Steg 2 – Navigation**: desktopmeny med länkar, mobil Menu-knapp som öppnar/stänger menyn (JS),
-  ankarlänkar till sektionerna.
+- [ ] **Steg 2 – Navigation**: desktopmeny med länkar, mobil Menu/Close-knapp som öppnar/stänger menyn (JS).
 - [ ] **Steg 3 – Header och text section**: stor rubrik, Rubrik + ingress.
 - [ ] **Steg 4 – Hero**: hero-bilden med rätt proportioner och hörnradie.
 - [ ] **Steg 5 – Project preview**: rubrik, pilar, horisontell karusell med scroll-snap och JS för pilarna.
@@ -82,7 +84,5 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 
 ## Öppna frågor
 
-- Finns en design för den öppnade mobilmenyn? Annars föreslår jag en enkel helskärmsmeny i samma stil.
-- Vart ska Case / About / Contact leda? Förslag: ankarlänkar till Project preview, About me och en
-  kontaktsektion/mejllänk.
-- Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag.
+- Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
+  (se Responsivitet ovan) och vi stämmer av i steg 9.

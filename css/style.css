@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Portfolio – Martina Caspersson
+   Mobile first. Brytpunkt: 768px (6 → 12 kolumner).
+   Textstorlekar skalar med clamp() så de blir exakt Figmas värden
+   vid 375px (mobilramen) och 1440px (desktopramen).
+   ========================================================================== */
+
+/* ---------- Typsnitt ---------- */
+/* Satoshi laddas från Fontshare i index.html */
+@font-face {
+  font-family: "Safiro";
+  src: url("../assets/fonts/safiro-medium-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Designtokens (från Figma) ---------- */
+:root {
+  /* Färger */
+  --text-primary: #000000;
+  --text-tertiary: #989898;
+  --background-primary: #ffffff;
+  --background-secondary: #bbbbc0;
+
+  /* Typsnitt */
+  --font-heading: "Safiro", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Satoshi", "Helvetica Neue", Arial, sans-serif;
+
+  /* Textstorlekar: mobil (375) → desktop (1440) */
+  --text-heading: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem);        /* 40 → 80 */
+  --text-subheading: clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);     /* 28 → 32 */
+  --text-body: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);           /* 16 → 20 */
+  --text-link-sm: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);        /* 16 → 20 */
+  --text-link-lg: 2.5rem;                                           /* 40 (mobilmeny) */
+
+  --line-height-heading: 1.05;
+  --line-height-body: normal;
+  --line-height-link: 1;
+
+  /* Grid – mobil */
+  --grid-columns: 6;
+  --grid-margin: 16px;
+  --grid-gap: 16px;
+
+  /* Övrigt */
+  --corner-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* Grid – desktop */
+    --grid-columns: 12;
+    --grid-margin: 24px;
+    --grid-gap: 24px;
+    --corner-radius: 4px;
+  }
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: var(--line-height-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: var(--line-height-heading);
+  overflow-wrap: break-word;
+}
+
+:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
+}
+
+/* ---------- Layout ---------- */
+/* Varje sektion är ett grid med Figmas kolumner, marginal och gap. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--grid-gap);
+  padding: var(--grid-margin);
+}
+
+/* ---------- Typografi ---------- */
+.heading {
+  font-size: var(--text-heading);
+}
+
+.subheading {
+  font-size: var(--text-subheading);
+}
+
+/* ---------- Bildkort (Media Card) ---------- */
+.media-card {
+  overflow: hidden;
+  border-radius: var(--corner-radius);
+  background-color: var(--background-secondary);
+}
+
+.media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Hjälpklasser ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
