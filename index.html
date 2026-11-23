@@ -14,6 +14,7 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="top">
     <div class="site-header__bar">
@@ -30,7 +31,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="intro" aria-labelledby="intro-title">
       <div class="grid">
         <h1 class="heading intro__title" id="intro-title">Digital designer based in Gothenburg</h1>
@@ -59,7 +60,7 @@
       <p class="projects__text">Lorem ipsum dolor sit amet consectetur. Convallis arcu ullamcorper ligula scelerisque. Sit vitae tellus urna lectus aenean nisl diam enim diam. Eu risus duis vel vitae ullamcorper eget vestibulum est. Facilisi cursus pharetra diam est ultricies.</p>
 
       <div class="projects__controls">
-        <button class="projects__arrow" type="button" data-direction="-1" aria-controls="projects-slider" aria-label="Previous image" disabled><svg viewBox="0 0 26 22" aria-hidden="true" focusable="false"><path d="M1.98395 8.92805H25.088V12.128H1.98395C5.69595 12.128 11.936 14.816 11.936 21.056H8.51195C8.51195 13.792 3.00795 12.192 -4.57764e-05 12.192V8.86405C3.00795 8.86405 8.51195 7.26405 8.51195 4.76837e-05H11.936C11.936 6.24005 5.69595 8.92805 1.98395 8.92805Z" fill="currentColor"/></svg></button>
+        <button class="projects__arrow" type="button" data-direction="-1" aria-controls="projects-slider" aria-label="Previous image" aria-disabled="true"><svg viewBox="0 0 26 22" aria-hidden="true" focusable="false"><path d="M1.98395 8.92805H25.088V12.128H1.98395C5.69595 12.128 11.936 14.816 11.936 21.056H8.51195C8.51195 13.792 3.00795 12.192 -4.57764e-05 12.192V8.86405C3.00795 8.86405 8.51195 7.26405 8.51195 4.76837e-05H11.936C11.936 6.24005 5.69595 8.92805 1.98395 8.92805Z" fill="currentColor"/></svg></button>
         <button class="projects__arrow" type="button" data-direction="1" aria-controls="projects-slider" aria-label="Next image"><svg viewBox="0 0 26 22" aria-hidden="true" focusable="false"><path d="M23.104 8.92805C19.392 8.92805 13.152 6.24005 13.152 4.76837e-05H16.576C16.576 7.26405 22.08 8.86405 25.088 8.86405V12.192C22.08 12.192 16.576 13.792 16.576 21.056H13.152C13.152 14.816 19.392 12.128 23.104 12.128H1.52588e-05V8.92805H23.104Z" fill="currentColor"/></svg></button>
       </div>
 

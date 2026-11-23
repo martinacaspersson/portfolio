@@ -409,7 +409,7 @@ h3 {
     aspect-ratio: 920 / 1149;
   }
 
-  .projects__arrow:disabled {
+  .projects__arrow[aria-disabled="true"] {
     color: var(--text-tertiary);
     cursor: default;
   }
@@ -794,6 +794,29 @@ h3 {
   .competences__block:nth-of-type(even) {
     grid-column: 7 / span 6;
   }
+}
+
+/* ---------- Hoppa till innehåll ---------- */
+/* Syns bara när den får tangentbordsfokus */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  padding: 8px 12px;
+  background-color: var(--text-primary);
+  color: var(--background-primary);
+  font-size: var(--text-link-sm);
+  line-height: var(--line-height-link);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: none;
+}
+
+main:focus {
+  outline: none;
 }
 
 /* ---------- Hjälpklasser ---------- */

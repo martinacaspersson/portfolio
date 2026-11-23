@@ -40,14 +40,17 @@ if (slider && arrows.length) {
     const maxScroll = slider.scrollWidth - slider.clientWidth;
     arrows.forEach((arrow) => {
       const direction = Number(arrow.dataset.direction);
-      arrow.disabled = direction < 0
+      const atEnd = direction < 0
         ? slider.scrollLeft <= 1
         : slider.scrollLeft >= maxScroll - 1;
+      // aria-disabled i stället för disabled så att tangentbordsfokus ligger kvar på knappen
+      arrow.setAttribute("aria-disabled", String(atEnd));
     });
   };
 
   arrows.forEach((arrow) => {
     arrow.addEventListener("click", () => {
+      if (arrow.getAttribute("aria-disabled") === "true") return;
       const card = slider.querySelector(".projects__card");
       const step = card.offsetWidth + parseFloat(getComputedStyle(slider).columnGap);
       slider.scrollBy({
