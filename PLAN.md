@@ -8,11 +8,12 @@ Responsiv one-page-portfolio i HTML och vanlig CSS (plus en liten JS-fil) byggd 
 | Fråga | Beslut |
 |---|---|
 | Typsnitt | **Safiro** Medium (rubriker) från egna filer i `assets/fonts/`, **Satoshi** Regular (brödtext) via Fontshare |
+| Omfattning | Bara startsidan (one-page) |
 | Innehåll | Desktopversionens text används på alla skärmstorlekar. Platshållare ("Title", lorem ipsum) ligger kvar tills de byts ut |
 | Interaktion | Lite JavaScript: pilarna bläddrar i projektkarusellen, Menu-knappen öppnar/stänger mobilmenyn |
 | Repo | Lokalt git-repo, commit efter varje steg |
 | Mobilmeny | Enligt komponenten *Navigation / Mobile, Open=True*: "Close" uppe till höger, länkarna Case / About / Contact i 40px under |
-| Länkar | Case / About / Contact behöver inte leda någonstans |
+| Länkar | Case / About / Contact är ankarlänkar till sektioner på samma sida (Case → projekt, About → About me, Contact → footer) |
 | Responsivitet | Mobile first. Grid 6 kolumner / 16px marginal under 768px, 12 kolumner / 24px från 768px. Textstorlekar skalar flytande med `clamp()` så de blir exakt Figmas värden vid 375px och 1440px |
 
 ## Designtokens från Figma
@@ -42,11 +43,12 @@ Body 16px, Link S 16px, Link L 40px (öppen meny).
 | 3 | Text section – Rubrik + ingress i två kolumner | Rubrik ovanför ingress |
 | 4 | Hero – stor bild | Mindre bild |
 | 5 | Project preview – Title + pilar, karusell med bilder | Title, karusell utan pilar |
-| 6 | About me – rubrik, tre textkolumner, porträtt | **Kommer efter Competences**, en kolumn, porträtt till höger |
+| 6 | About me – rubrik, text, två bilder (blommor + porträtt) | En kolumn, två bilder bredvid varandra under texten |
 | 7 | Competences – What I know: Tools, Experience, Education, Hobbies | 2×2-rutnät |
 | 8 | Image section – två bilder | Två mindre bilder |
+| 9 | Footer – Case / About / Contact, "Get in touch →", "Send me an email"-knapp, © + Portfolio | Samma innehåll, mindre text |
 
-Obs: About me och Competences byter plats mellan mobil och desktop – det löses med CSS (`order` i grid/flex) så att HTML:en bara finns en gång.
+Uppdaterat 2026-11-23: About me ligger före Competences i både mobil och desktop i nuvarande Figma, så ingen omflyttning behövs. Footer har tillkommit.
 
 ## Filstruktur
 
@@ -75,14 +77,15 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - [ ] **Steg 3 – Header och text section**: stor rubrik, Rubrik + ingress.
 - [ ] **Steg 4 – Hero**: hero-bilden med rätt proportioner och hörnradie.
 - [ ] **Steg 5 – Project preview**: rubrik, pilar, horisontell karusell med scroll-snap och JS för pilarna.
-- [ ] **Steg 6 – About me**: textkolumner och porträtt.
-- [ ] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop,
-  samt bytt ordning mot About me på mobil.
+- [ ] **Steg 6 – About me**: text och två bilder (blommor + porträtt). Blombilden exporteras från Figma här.
+- [ ] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.
 - [ ] **Steg 8 – Image section**: de två avslutande bilderna.
-- [ ] **Steg 9 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
+- [ ] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto-länk), copyright.
+- [ ] **Steg 10 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
   fokusmarkering, tangentbord), HTML-validering, sista jämförelse mot Figma.
 
 ## Öppna frågor
 
+- Vilken e-postadress ska "Send me an email" gå till?
 - Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
-  (se Responsivitet ovan) och vi stämmer av i steg 9.
+  (se Responsivitet ovan) och vi stämmer av i steg 10.
