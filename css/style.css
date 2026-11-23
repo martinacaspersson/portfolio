@@ -6,7 +6,23 @@
    ========================================================================== */
 
 /* ---------- Typsnitt ---------- */
-/* Satoshi laddas från Fontshare i index.html */
+/* Satoshi (variabel, vikt 300–900) – egna filer, licens i assets/fonts/satoshi-license.txt */
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/satoshi-variable.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/satoshi-variable-italic.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Safiro";
   src: url("../assets/fonts/safiro-medium-webfont.woff2") format("woff2");
@@ -162,7 +178,7 @@ h3 {
 
 /* ---------- Navigation ---------- */
 /* Mobil (Figma: Navigation / Mobile): namn + Menu, linje under.
-   Öppen meny: Close, länkarna i Link L (40px) med 64px avstånd. */
+   Öppen meny: Close i kursiv, länkarna i Link L (40px) med 64px avstånd. */
 .site-header {
   display: flex;
   flex-direction: column;
@@ -194,6 +210,10 @@ h3 {
   gap: 8px;
   margin-top: 64px;
   font-size: var(--text-link-lg);
+}
+
+.site-header__toggle[aria-expanded="true"] {
+  font-style: italic;
 }
 
 /* Med JS är menyn stängd tills man trycker på Menu */

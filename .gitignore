@@ -1,2 +1,5 @@
 .DS_Store
 .claude/
+
+# Originalpaket för typsnitt (bara webbfilerna i assets/fonts används)
+assets/fonts/Satoshi_Complete/

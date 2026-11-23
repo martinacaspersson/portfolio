@@ -7,7 +7,7 @@ Responsiv one-page-portfolio i HTML och vanlig CSS (plus en liten JS-fil) byggd 
 
 | Fråga | Beslut |
 |---|---|
-| Typsnitt | **Safiro** Medium (rubriker) från egna filer i `assets/fonts/`, **Satoshi** Regular (brödtext) via Fontshare |
+| Typsnitt | **Safiro** Medium (rubriker) från egna filer i `assets/fonts/`, **Satoshi Variable** (brödtext, länkar, kursiv för Close) från egna filer i `assets/fonts/` |
 | Omfattning | Bara startsidan (one-page) |
 | E-post | "Send me an email" länkar till `mailto:martina@caspersson.biz` |
 | Innehåll | Desktopversionens text används på alla skärmstorlekar. Platshållare ("Title", lorem ipsum) ligger kvar tills de byts ut |
@@ -72,7 +72,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 
 - [x] **Steg 0 – Plan och repo**: den här planen, `git init`, första commit.
 - [x] **Steg 1 – Grund**: filstruktur, `index.html`-skelett med semantiska sektioner, CSS-reset,
-  CSS-variabler för tokens, `@font-face` för Safiro, Satoshi via Fontshare, grid-system
+  CSS-variabler för tokens, `@font-face` för Safiro och Satoshi, grid-system
   (mobile first, brytpunkt för desktop), exportera alla bilder från Figma till `assets/images/`.
 - [x] **Steg 2 – Navigation**: desktopmeny med länkar, mobil Menu/Close-knapp som öppnar/stänger menyn (JS).
 - [x] **Steg 3 – Header och text section**: stor rubrik, Rubrik + ingress.
