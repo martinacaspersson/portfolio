@@ -68,6 +68,9 @@
   --icon-arrow-down-right-lg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M50.0011 28.9999V54.9999C50.0011 55.5303 49.7904 56.039 49.4153 56.4141C49.0403 56.7892 48.5315 56.9999 48.0011 56.9999H22.0011C21.4707 56.9999 20.962 56.7892 20.5869 56.4141C20.2118 56.039 20.0011 55.5303 20.0011 54.9999C20.0011 54.4695 20.2118 53.9608 20.5869 53.5857C20.962 53.2106 21.4707 52.9999 22.0011 52.9999H43.1736L14.5861 24.4149C14.2108 24.0396 14 23.5306 14 22.9999C14 22.4692 14.2108 21.9602 14.5861 21.5849C14.9614 21.2096 15.4704 20.9988 16.0011 20.9988C16.5318 20.9988 17.0408 21.2096 17.4161 21.5849L46.0011 50.1724V28.9999C46.0011 28.4695 46.2118 27.9608 46.5869 27.5857C46.962 27.2106 47.4707 26.9999 48.0011 26.9999C48.5315 26.9999 49.0403 27.2106 49.4153 27.5857C49.7904 27.9608 50.0011 28.4695 50.0011 28.9999Z'/%3E%3C/svg%3E");
   --icon-arrow-up-right: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 4.12498V13.8747C15.5 14.0736 15.421 14.2643 15.2803 14.405C15.1397 14.5456 14.9489 14.6247 14.75 14.6247C14.5511 14.6247 14.3604 14.5456 14.2197 14.405C14.0791 14.2643 14 14.0736 14 13.8747V5.93523L3.281 16.6552C3.14028 16.7959 2.94941 16.875 2.75039 16.875C2.55138 16.875 2.36051 16.7959 2.21979 16.6552C2.07906 16.5145 2 16.3236 2 16.1246C2 15.9256 2.07906 15.7347 2.21979 15.594L12.9398 4.87495H5.00032C4.80142 4.87495 4.61066 4.79594 4.47001 4.65529C4.32936 4.51464 4.25035 4.32388 4.25035 4.12498C4.25035 3.92607 4.32936 3.73531 4.47001 3.59466C4.61066 3.45402 4.80142 3.375 5.00032 3.375H14.75C14.9489 3.375 15.1397 3.45402 15.2803 3.59466C15.421 3.73531 15.5 3.92607 15.5 4.12498Z'/%3E%3C/svg%3E");
 
+  --icon-envelope: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.875 5H2.675C2.49598 5 2.32429 5.07112 2.1977 5.1977C2.07112 5.32429 2 5.49598 2 5.675V17.15C2 17.508 2.14223 17.8514 2.39541 18.1046C2.64858 18.3578 2.99196 18.5 3.35 18.5H18.2C18.558 18.5 18.9014 18.3578 19.1546 18.1046C19.4078 17.8514 19.55 17.508 19.55 17.15V5.675C19.55 5.49598 19.4789 5.32429 19.3523 5.1977C19.2257 5.07112 19.054 5 18.875 5ZM10.775 12.1845L4.41059 6.35H17.1394L10.775 12.1845ZM8.30366 11.75L3.35 16.2902V7.20978L8.30366 11.75ZM9.30266 12.6655L10.3152 13.5978C10.4397 13.7121 10.6026 13.7756 10.7716 13.7756C10.9407 13.7756 11.1036 13.7121 11.2281 13.5978L12.2406 12.6655L17.1343 17.15H4.41059L9.30266 12.6655ZM13.2463 11.75L18.2 7.20894V16.2911L13.2463 11.75Z'/%3E%3C/svg%3E");
+  --icon-envelope-lg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M61.1923 21H17.8077C17.3283 21 16.8685 21.1896 16.5295 21.5272C16.1905 21.8648 16 22.3226 16 22.8V53.4C16 54.3548 16.3809 55.2705 17.0589 55.9456C17.7369 56.6207 18.6565 57 19.6154 57H59.3846C60.3435 57 61.2631 56.6207 61.9411 55.9456C62.6191 55.2705 63 54.3548 63 53.4V22.8C63 22.3226 62.8095 21.8648 62.4705 21.5272C62.1315 21.1896 61.6717 21 61.1923 21ZM39.5 40.1587L22.4557 24.6H56.5443L39.5 40.1587ZM32.8816 39L19.6154 51.1072V26.8928L32.8816 39ZM35.557 41.4413L38.2685 43.9275C38.602 44.2323 39.0382 44.4015 39.491 44.4015C39.9437 44.4015 40.3799 44.2323 40.7134 43.9275L43.4249 41.4413L56.5307 53.4H22.4557L35.557 41.4413ZM46.1184 39L59.3846 26.8905V51.1095L46.1184 39Z'/%3E%3C/svg%3E");
+
   /* Övrigt */
   --corner-radius: 2px;
 }
@@ -98,6 +101,13 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+}
+
+/* Mjuk scroll till ankarlänkarna (Case/About/Contact), utom för den som valt minskad rörelse */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -581,11 +591,6 @@ h3 {
   color: var(--text-primary);
 }
 
-.site-footer__email:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
 /* Länkarna fördelas på tre lika breda delar: vänster, mitten, höger */
 .site-footer__nav {
   grid-column: 1 / -1;
@@ -613,6 +618,8 @@ h3 {
   gap: var(--gap-sm);
 }
 
+/* E-postknappen (Figma: Link email). Default: vanlig text.
+   Hover/fokus: kursiv text och ett kuvert efter (S: 20px, 4px mellanrum; L: 1em utan mellanrum). */
 .site-footer__email {
   display: flex;
   align-items: center;
@@ -620,13 +627,29 @@ h3 {
   padding: 8px;
   background-color: var(--background-secondary);
   font-size: var(--text-link-sm);
-  font-style: italic;
   line-height: var(--line-height-link);
   white-space: nowrap;
 }
 
-.site-footer__email img {
+.site-footer__email::after {
+  content: "";
+  display: none;
   flex: none;
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-envelope) center / contain no-repeat;
+  mask: var(--icon-envelope) center / contain no-repeat;
+}
+
+.site-footer__email:hover,
+.site-footer__email:focus-visible {
+  font-style: italic;
+}
+
+.site-footer__email:hover::after,
+.site-footer__email:focus-visible::after {
+  display: block;
 }
 
 .site-footer__copyright {
@@ -657,13 +680,16 @@ h3 {
   .site-footer__email {
     grid-column: 7 / span 6;
     justify-self: end;
+    gap: 0;
     padding: 16px;
     font-size: var(--text-link-lg);
-    font-style: normal;
   }
 
-  .site-footer__email img {
-    display: none;
+  .site-footer__email::after {
+    width: 1em;
+    height: 1em;
+    -webkit-mask-image: var(--icon-envelope-lg);
+    mask-image: var(--icon-envelope-lg);
   }
 
   .site-footer__copyright {
