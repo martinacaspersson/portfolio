@@ -132,6 +132,7 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  align-items: start;
   column-gap: var(--grid-gap);
   row-gap: var(--grid-gap);
   padding: var(--grid-margin);
@@ -229,6 +230,29 @@ h3 {
     gap: 40px;
     margin-top: 0;
     font-size: var(--text-link-sm);
+  }
+}
+
+/* ---------- Intro (Header section + Text section) ---------- */
+/* Mobil: allt över hela bredden, rubrik ovanför ingress. */
+.intro__title,
+.intro__subtitle,
+.intro__lead {
+  grid-column: 1 / -1;
+}
+
+/* Desktop: titel över 9 kolumner, Rubrik i kolumn 1–4, ingress i kolumn 5–10 */
+@media (min-width: 768px) {
+  .intro__title {
+    grid-column: 1 / span 9;
+  }
+
+  .intro__subtitle {
+    grid-column: 1 / span 4;
+  }
+
+  .intro__lead {
+    grid-column: 5 / span 6;
   }
 }
 
