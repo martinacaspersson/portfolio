@@ -82,7 +82,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - [x] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.
 - [x] **Steg 8 – Image section**: de två avslutande bilderna.
 - [x] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto:martina@caspersson.biz), copyright.
-- [ ] **Steg 10 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
+- [x] **Steg 10 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
   fokusmarkering, tangentbord), HTML-validering, sista jämförelse mot Figma.
 
 ## Öppna frågor
@@ -91,3 +91,11 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - Projektbilderna har Unsplash+-vattenstämplar – licensierade versioner behövs innan sajten publiceras.
 - Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
   (se Responsivitet ovan) och vi stämmer av i steg 10.
+
+## Kända avvikelser från Figma (medvetna)
+
+- Mobilens projektrubrik heter "Title 1" (desktoptexten används överallt) – Figma mobil säger "Project 1".
+- Mejlknappen i mobilfootern visar normalläget (vanlig text) och hover-läget (kursiv + kuvert) enligt komponenten Link email; Figmas mobilram visar hover-läget.
+- Kompetenssektionen på mobil är ~2px högre än i Figma (webbläsaren avrundar radhöjden).
+- Surfplatta (768–1023px) har egen layout för ingress, About me och kompetenser eftersom Figma bara har 375 och 1440.
+
