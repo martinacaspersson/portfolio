@@ -190,6 +190,11 @@ h3 {
   background-color: var(--background-secondary);
 }
 
+/* <picture> ska inte påverka layouten – bilden fyller kortet direkt */
+.media-card picture {
+  display: contents;
+}
+
 .media-card img {
   width: 100%;
   height: 100%;

@@ -45,13 +45,18 @@
 
     <section class="hero grid" aria-label="Featured work">
       <figure class="media-card hero__media">
-        <img
-          src="assets/images/hero.jpg"
-          srcset="assets/images/hero-1392.jpg 1392w, assets/images/hero.jpg 2784w"
-          sizes="(min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
-          width="2784" height="1566"
-          alt="Abstract artwork of glowing purple and orange spheres on a black background"
-          fetchpriority="high">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/images/hero-1392.webp 1392w, assets/images/hero.webp 2784w"
+            sizes="(min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)">
+          <img
+            src="assets/images/hero.jpg"
+            srcset="assets/images/hero-1392.jpg 1392w, assets/images/hero.jpg 2784w"
+            sizes="(min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
+            width="2784" height="1566"
+            alt="Abstract artwork of glowing purple and orange spheres on a black background"
+            fetchpriority="high">
+        </picture>
       </figure>
     </section>
 
@@ -66,16 +71,25 @@
 
       <ul class="projects__slider" id="projects-slider" aria-label="Project images" tabindex="0">
         <li class="media-card projects__card">
-          <img src="assets/images/project-1.jpg" width="941" height="1412" sizes="(min-width: 768px) 63vw, 60vw" loading="lazy"
+          <picture>
+            <source type="image/webp" srcset="assets/images/project-1-480.webp 480w, assets/images/project-1.webp 941w" sizes="(min-width: 768px) 64vw, 60vw">
+            <img src="assets/images/project-1.jpg" width="941" height="1412" loading="lazy"
             alt="Abstract fluid art in orange, pink and gold on a black background">
+          </picture>
         </li>
         <li class="media-card projects__card">
-          <img src="assets/images/project-2.jpg" width="1081" height="1411" sizes="(min-width: 768px) 63vw, 60vw" loading="lazy"
+          <picture>
+            <source type="image/webp" srcset="assets/images/project-2-480.webp 480w, assets/images/project-2.webp 1081w" sizes="(min-width: 768px) 64vw, 60vw">
+            <img src="assets/images/project-2.jpg" width="1081" height="1411" loading="lazy"
             alt="Still life painting of a flower bouquet in a vase on a dark background">
+          </picture>
         </li>
         <li class="media-card projects__card">
-          <img src="assets/images/project-3.jpg" width="941" height="1412" sizes="(min-width: 768px) 63vw, 60vw" loading="lazy"
+          <picture>
+            <source type="image/webp" srcset="assets/images/project-3-480.webp 480w, assets/images/project-3.webp 941w" sizes="(min-width: 768px) 64vw, 60vw">
+            <img src="assets/images/project-3.jpg" width="941" height="1412" loading="lazy"
             alt="Orange and white fluid art shaped like a flower on a pale blue background">
+          </picture>
         </li>
       </ul>
 
@@ -93,13 +107,19 @@
       </div>
 
       <figure class="media-card about__flowers">
-        <img src="assets/images/about-flowers.jpg" width="660" height="528" loading="lazy"
+        <picture>
+          <source type="image/webp" srcset="assets/images/about-flowers-330.webp 330w, assets/images/about-flowers.webp 660w" sizes="(min-width: 1024px) 23vw, (min-width: 768px) 48vw, 44vw">
+          <img src="assets/images/about-flowers.jpg" width="660" height="528" loading="lazy"
           alt="Close-up of a colourful bouquet of dahlias and hydrangeas">
+        </picture>
       </figure>
 
       <figure class="media-card about__portrait">
-        <img src="assets/images/about-portrait.jpg" width="896" height="1120" loading="lazy"
+        <picture>
+          <source type="image/webp" srcset="assets/images/about-portrait-448.webp 448w, assets/images/about-portrait.webp 896w" sizes="(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 44vw">
+          <img src="assets/images/about-portrait.jpg" width="896" height="1120" loading="lazy"
           alt="Martina Caspersson taking a mirror selfie">
+        </picture>
       </figure>
     </section>
 
@@ -178,14 +198,18 @@
 
     <section class="gallery grid" aria-label="Gallery">
       <figure class="media-card gallery__laptop">
-        <img src="assets/images/image-laptop.jpg" width="1392" height="1740" loading="lazy"
-          sizes="(min-width: 768px) 48vw, 44vw"
+        <picture>
+          <source type="image/webp" srcset="assets/images/image-laptop-700.webp 700w, assets/images/image-laptop.webp 1392w" sizes="(min-width: 768px) 48vw, 44vw">
+          <img src="assets/images/image-laptop.jpg" width="1392" height="1740" loading="lazy"
           alt="Open laptop with a backlit keyboard glowing in purple and orange light">
+        </picture>
       </figure>
       <figure class="media-card gallery__grass">
-        <img src="assets/images/image-grass.jpg" width="1368" height="912" loading="lazy"
-          sizes="(min-width: 768px) 48vw, 44vw"
+        <picture>
+          <source type="image/webp" srcset="assets/images/image-grass-700.webp 700w, assets/images/image-grass.webp 1368w" sizes="(min-width: 768px) 48vw, 44vw">
+          <img src="assets/images/image-grass.jpg" width="1368" height="912" loading="lazy"
           alt="Woman in a red suit and black boots sitting on green grass, seen from above">
+        </picture>
       </figure>
     </section>
   </main>
