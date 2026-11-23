@@ -400,6 +400,54 @@ h3 {
   }
 }
 
+/* ---------- About me ---------- */
+/* Mobil: text överst, blommor (5:4) och porträtt (4:5) bredvid varandra under, 32px radavstånd.
+   Desktop: text i kolumn 1–4, blommor i 6–8, porträtt i 9–12. */
+.about {
+  row-gap: 32px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+  grid-column: 1 / -1;
+}
+
+/* Figma har en tom rad mellan styckena */
+.about__text p + p {
+  margin-top: 1.35em;
+  margin-top: 1lh;
+}
+
+.about__flowers {
+  grid-column: 1 / span 3;
+  aspect-ratio: 5 / 4;
+}
+
+.about__portrait {
+  grid-column: 4 / span 3;
+  aspect-ratio: 4 / 5;
+}
+
+@media (min-width: 768px) {
+  .about {
+    row-gap: var(--grid-gap);
+  }
+
+  .about__content {
+    grid-column: 1 / span 4;
+  }
+
+  .about__flowers {
+    grid-column: 6 / span 3;
+  }
+
+  .about__portrait {
+    grid-column: 9 / span 4;
+  }
+}
+
 /* ---------- Hjälpklasser ---------- */
 .visually-hidden {
   position: absolute;

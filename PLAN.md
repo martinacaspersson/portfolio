@@ -78,7 +78,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - [x] **Steg 3 – Header och text section**: stor rubrik, Rubrik + ingress.
 - [x] **Steg 4 – Hero**: hero-bilden med rätt proportioner och hörnradie.
 - [x] **Steg 5 – Project preview**: rubrik, pilar, horisontell karusell med scroll-snap och JS för pilarna.
-- [ ] **Steg 6 – About me**: text och två bilder (blommor + porträtt). Blombilden exporteras från Figma här.
+- [x] **Steg 6 – About me**: text och två bilder (blommor + porträtt).
 - [ ] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.
 - [ ] **Steg 8 – Image section**: de två avslutande bilderna.
 - [ ] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto:martina@caspersson.biz), copyright.
@@ -87,7 +87,8 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 
 ## Öppna frågor
 
-- Vart ska "Read more" (mobil, projektsektionen) länka? Just nu `href="#"`.
+- "Read more" (mobil, projektsektionen) får sin länk senare – just nu `href="#"`.
+- `about-flowers.jpg` och `about-portrait.jpg` är tillfälliga 1x-renderingar från Figma. Ersätt med Media Card-lagren exporterade som JPG i 2x (samma filnamn) för skarpa bilder på retinaskärmar. `portrait.png` används inte längre.
 - Projektbilderna har Unsplash+-vattenstämplar – licensierade versioner behövs innan sajten publiceras.
 - Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
   (se Responsivitet ovan) och vi stämmer av i steg 10.
