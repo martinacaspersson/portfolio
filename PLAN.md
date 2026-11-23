@@ -81,7 +81,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - [x] **Steg 6 – About me**: text och två bilder (blommor + porträtt).
 - [x] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.
 - [x] **Steg 8 – Image section**: de två avslutande bilderna.
-- [ ] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto:martina@caspersson.biz), copyright.
+- [x] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto:martina@caspersson.biz), copyright.
 - [ ] **Steg 10 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
   fokusmarkering, tangentbord), HTML-validering, sista jämförelse mot Figma.
 
