@@ -60,6 +60,9 @@
   --grid-margin: 16px;
   --grid-gap: 16px;
 
+  --gap-sm: 8px;
+  --gap-section: 32px;
+
   /* Övrigt */
   --corner-radius: 2px;
 }
@@ -70,6 +73,8 @@
     --grid-columns: 12;
     --grid-margin: 24px;
     --grid-gap: 24px;
+    --gap-sm: 16px;
+    --gap-section: 64px;
     --corner-radius: 4px;
   }
 }
@@ -444,6 +449,81 @@ h3 {
   }
 
   .about__portrait {
+    grid-column: 9 / span 4;
+  }
+}
+
+/* ---------- Competences (What I know) ---------- */
+/* Mobil: allt i en kolumn med 32px mellanrum.
+   Desktop: rubrik i kolumn 1–4, Tools/Education i 5–8, Hobbies/Experience i 9–12, 64px radavstånd. */
+.competences {
+  row-gap: var(--gap-section);
+}
+
+.competences__title,
+.competences__block {
+  grid-column: 1 / -1;
+}
+
+.competences__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+}
+
+/* Hobbies: två kolumner med tre rader, 8px mellan kolumnerna */
+.competences__columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  column-gap: 8px;
+}
+
+/* Utbildning och erfarenhet: skola/företag i fetstil, linje ovanför rollerna, årtal till höger */
+.cv {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.cv__place {
+  font-family: var(--font-body);
+  font-weight: 700;
+  line-height: var(--line-height-body);
+}
+
+.cv__roles {
+  border-top: 1px solid var(--border-secondary);
+}
+
+.cv__role {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv__role > :first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+.cv__years {
+  white-space: nowrap;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .competences__title {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  .competences__block:nth-of-type(odd) {
+    grid-column: 5 / span 4;
+  }
+
+  .competences__block:nth-of-type(even) {
     grid-column: 9 / span 4;
   }
 }
