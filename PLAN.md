@@ -9,6 +9,7 @@ Responsiv one-page-portfolio i HTML och vanlig CSS (plus en liten JS-fil) byggd 
 |---|---|
 | Typsnitt | **Safiro** Medium (rubriker) från egna filer i `assets/fonts/`, **Satoshi** Regular (brödtext) via Fontshare |
 | Omfattning | Bara startsidan (one-page) |
+| E-post | "Send me an email" länkar till `mailto:martina@caspersson.biz` |
 | Innehåll | Desktopversionens text används på alla skärmstorlekar. Platshållare ("Title", lorem ipsum) ligger kvar tills de byts ut |
 | Interaktion | Lite JavaScript: pilarna bläddrar i projektkarusellen, Menu-knappen öppnar/stänger mobilmenyn |
 | Repo | Lokalt git-repo, commit efter varje steg |
@@ -80,12 +81,11 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - [ ] **Steg 6 – About me**: text och två bilder (blommor + porträtt). Blombilden exporteras från Figma här.
 - [ ] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.
 - [ ] **Steg 8 – Image section**: de två avslutande bilderna.
-- [ ] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto-länk), copyright.
+- [ ] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto:martina@caspersson.biz), copyright.
 - [ ] **Steg 10 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
   fokusmarkering, tangentbord), HTML-validering, sista jämförelse mot Figma.
 
 ## Öppna frågor
 
-- Vilken e-postadress ska "Send me an email" gå till?
 - Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
   (se Responsivitet ovan) och vi stämmer av i steg 10.
