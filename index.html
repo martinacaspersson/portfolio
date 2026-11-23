@@ -7,14 +7,29 @@
   <meta name="description" content="Portfolio of Martina Caspersson, digital designer based in Gothenburg.">
 
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,401&display=swap">
   <link rel="preload" href="assets/fonts/safiro-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
-  <!-- Steg 2: Navigation -->
-  <header class="site-header"></header>
+  <header class="site-header" id="top">
+    <div class="site-header__bar">
+      <a class="site-header__name" href="#top">Martina Caspersson</a>
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list" id="site-menu">
+        <li><a class="site-nav__link" href="#case">Case</a></li>
+        <li><a class="site-nav__link" href="#about">About</a></li>
+        <li><a class="site-nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <!-- Steg 3: Header section + Text section -->
@@ -24,17 +39,20 @@
     <section class="hero" aria-label="Featured work"></section>
 
     <!-- Steg 5: Project preview -->
-    <section class="projects" aria-label="Projects"></section>
+    <section class="projects" id="case" aria-label="Projects"></section>
 
     <!-- Steg 6–7: About me + Competences (byter ordning på mobil) -->
     <div class="about-wrapper">
-      <section class="about" aria-labelledby="about-title"></section>
+      <section class="about" id="about" aria-labelledby="about-title"></section>
       <section class="competences" aria-labelledby="competences-title"></section>
     </div>
 
     <!-- Steg 8: Image section -->
     <section class="gallery" aria-label="Gallery"></section>
   </main>
+
+  <!-- Steg 9: Footer -->
+  <footer class="site-footer" id="contact"></footer>
 
 </body>
 </html>
