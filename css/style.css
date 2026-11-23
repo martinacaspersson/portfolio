@@ -283,6 +283,123 @@ h3 {
   aspect-ratio: 1920 / 1080;
 }
 
+/* ---------- Project preview ---------- */
+/* Mobil (Figma: Project preview 5:4): titel, text, bildspel, "Read more".
+   Desktop (Figma: Project preview 4:5): titel, text och pilar på en rad, bildspel under. */
+.projects__title,
+.projects__text,
+.projects__slider,
+.projects__read-more {
+  grid-column: 1 / -1;
+}
+
+.projects__controls {
+  display: none;
+}
+
+/* Bildspelet går ut till skärmkanten men startar i linje med griden.
+   content-box gör att höjden räknas från gridbredden (Figma: 1416/1150). */
+.projects__slider {
+  box-sizing: content-box;
+  display: flex;
+  gap: var(--grid-gap);
+  aspect-ratio: 1416 / 1150;
+  margin-inline: calc(-1 * var(--grid-margin));
+  padding-inline: var(--grid-margin);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--grid-margin);
+  scrollbar-width: none;
+}
+
+.projects__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__card {
+  flex: 0 0 auto;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  scroll-snap-align: start;
+}
+
+.projects__read-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: var(--text-link-sm);
+  font-style: italic;
+  line-height: var(--line-height-link);
+}
+
+.projects__read-more img {
+  flex: none;
+}
+
+.projects__read-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+@media (min-width: 768px) {
+  .projects__title {
+    grid-column: 1 / span 5;
+  }
+
+  .projects__text {
+    grid-column: 6 / span 5;
+  }
+
+  .js .projects__controls {
+    display: flex;
+    grid-column: 11 / span 2;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: var(--text-subheading);
+  }
+
+  /* Pilarna är Figmas Safiro-pilar exporterade som SVG (webbfontens pil ser annorlunda ut).
+     Mått i em så de skalar med Title 2: 26×22 i en 34px hög rad vid 32px. */
+  .projects__arrow {
+    display: flex;
+    align-items: flex-start;
+    height: 1.05em;
+  }
+
+  .projects__arrow svg {
+    display: block;
+    width: 0.8125em;
+    height: 0.6875em;
+    margin: 0.218em 0.046em 0;
+  }
+
+  .projects__arrow[data-direction="1"] svg {
+    margin-right: 0.02em;
+  }
+
+  /* Figma: korten är 920×1149 och sticker ut ~9px över och under bildspelets ram (1416/1150).
+     Negativ marginal i % (räknas på gridbredden) håller sektionens höjd som i Figma. */
+  .projects__slider {
+    aspect-ratio: 1392 / 1149;
+    margin-block: -0.6642%;
+  }
+
+  .projects__card {
+    aspect-ratio: 920 / 1149;
+  }
+
+  .projects__arrow:disabled {
+    color: var(--text-tertiary);
+    cursor: default;
+  }
+
+  .projects__read-more {
+    display: none;
+  }
+}
+
 /* ---------- Hjälpklasser ---------- */
 .visually-hidden {
   position: absolute;

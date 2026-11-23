@@ -28,3 +28,41 @@ document.addEventListener("keydown", (event) => {
 desktop.addEventListener("change", (event) => {
   if (event.matches) setMenu(false);
 });
+
+/* Projektbildspel: pilarna bläddrar en bild i taget och tonas ner i början/slutet. */
+const slider = document.querySelector(".projects__slider");
+const arrows = document.querySelectorAll(".projects__arrow");
+
+if (slider && arrows.length) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  const updateArrows = () => {
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    arrows.forEach((arrow) => {
+      const direction = Number(arrow.dataset.direction);
+      arrow.disabled = direction < 0
+        ? slider.scrollLeft <= 1
+        : slider.scrollLeft >= maxScroll - 1;
+    });
+  };
+
+  arrows.forEach((arrow) => {
+    arrow.addEventListener("click", () => {
+      const card = slider.querySelector(".projects__card");
+      const step = card.offsetWidth + parseFloat(getComputedStyle(slider).columnGap);
+      slider.scrollBy({
+        left: Number(arrow.dataset.direction) * step,
+        behavior: reduceMotion.matches ? "auto" : "smooth",
+      });
+    });
+  });
+
+  let frame;
+  const scheduleUpdate = () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(updateArrows);
+  };
+  slider.addEventListener("scroll", scheduleUpdate, { passive: true });
+  window.addEventListener("resize", scheduleUpdate);
+  updateArrows();
+}
