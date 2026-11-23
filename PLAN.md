@@ -76,7 +76,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
   (mobile first, brytpunkt för desktop), exportera alla bilder från Figma till `assets/images/`.
 - [x] **Steg 2 – Navigation**: desktopmeny med länkar, mobil Menu/Close-knapp som öppnar/stänger menyn (JS).
 - [x] **Steg 3 – Header och text section**: stor rubrik, Rubrik + ingress.
-- [ ] **Steg 4 – Hero**: hero-bilden med rätt proportioner och hörnradie.
+- [x] **Steg 4 – Hero**: hero-bilden med rätt proportioner och hörnradie.
 - [ ] **Steg 5 – Project preview**: rubrik, pilar, horisontell karusell med scroll-snap och JS för pilarna.
 - [ ] **Steg 6 – About me**: text och två bilder (blommor + porträtt). Blombilden exporteras från Figma här.
 - [ ] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.

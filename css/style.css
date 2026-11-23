@@ -276,6 +276,13 @@ h3 {
   }
 }
 
+/* ---------- Hero ---------- */
+/* Bild över hela griden i 16:9 (Figma: Media Card 1920/1080) */
+.hero__media {
+  grid-column: 1 / -1;
+  aspect-ratio: 1920 / 1080;
+}
+
 /* ---------- Hjälpklasser ---------- */
 .visually-hidden {
   position: absolute;

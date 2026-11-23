@@ -42,8 +42,17 @@
       </div>
     </section>
 
-    <!-- Steg 4: Hero -->
-    <section class="hero" aria-label="Featured work"></section>
+    <section class="hero grid" aria-label="Featured work">
+      <figure class="media-card hero__media">
+        <img
+          src="assets/images/hero.jpg"
+          srcset="assets/images/hero-1392.jpg 1392w, assets/images/hero.jpg 2784w"
+          sizes="(min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
+          width="2784" height="1566"
+          alt="Abstract artwork of glowing purple and orange spheres on a black background"
+          fetchpriority="high">
+      </figure>
+    </section>
 
     <!-- Steg 5: Project preview -->
     <section class="projects" id="case" aria-label="Projects"></section>
