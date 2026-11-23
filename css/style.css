@@ -161,7 +161,7 @@ h3 {
 
 /* ---------- Navigation ---------- */
 /* Mobil (Figma: Navigation / Mobile): namn + Menu, linje under.
-   Öppen meny: Close i kursiv, länkarna i Link L (40px) med 64px avstånd. */
+   Öppen meny: Close, länkarna i Link L (40px) med 64px avstånd. */
 .site-header {
   display: flex;
   flex-direction: column;
@@ -185,10 +185,6 @@ h3 {
 
 .js .site-header__toggle {
   display: block;
-}
-
-.site-header__toggle[aria-expanded="true"] {
-  font-style: italic;
 }
 
 .site-nav__list {
