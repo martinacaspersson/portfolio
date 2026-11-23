@@ -80,7 +80,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 - [x] **Steg 5 – Project preview**: rubrik, pilar, horisontell karusell med scroll-snap och JS för pilarna.
 - [x] **Steg 6 – About me**: text och två bilder (blommor + porträtt).
 - [x] **Steg 7 – Competences**: "What I know" med fyra listor, olika rutnät för mobil/desktop.
-- [ ] **Steg 8 – Image section**: de två avslutande bilderna.
+- [x] **Steg 8 – Image section**: de två avslutande bilderna.
 - [ ] **Steg 9 – Footer**: länkar, "Get in touch →", "Send me an email" (mailto:martina@caspersson.biz), copyright.
 - [ ] **Steg 10 – Finputs**: kontroll på mellanbredder (768, 1024, 1280), tillgänglighet (alt-texter,
   fokusmarkering, tangentbord), HTML-validering, sista jämförelse mot Figma.
@@ -88,7 +88,6 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 ## Öppna frågor
 
 - "Read more" (mobil, projektsektionen) får sin länk senare – just nu `href="#"`.
-- `about-portrait.jpg` saknar Figmas bildfilter (exponering +21, kontrast −33, skuggor +36, högdagrar −19, mättnad +8) och utsnittet skiljer sig lite. Exakt version: exportera porträttets Media Card-lager i About me som JPG 2x och spara som `assets/originals/about-portrait-figma-2x.jpg`. Originalfoton ligger i `assets/originals/` (ignoreras av git).
 - Projektbilderna har Unsplash+-vattenstämplar – licensierade versioner behövs innan sajten publiceras.
 - Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
   (se Responsivitet ovan) och vi stämmer av i steg 10.

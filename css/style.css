@@ -528,6 +528,36 @@ h3 {
   }
 }
 
+/* ---------- Image section ---------- */
+/* Mobil: gräsbilden (4:5) till vänster, laptopen (5:4) till höger.
+   Desktop: laptopen (4:5) i kolumn 1–6, gräsbilden (5:4) i 7–12. Bilderna beskärs från mitten. */
+.gallery__laptop,
+.gallery__grass {
+  grid-row: 1;
+}
+
+.gallery__grass {
+  grid-column: 1 / span 3;
+  aspect-ratio: 4 / 5;
+}
+
+.gallery__laptop {
+  grid-column: 4 / span 3;
+  aspect-ratio: 5 / 4;
+}
+
+@media (min-width: 768px) {
+  .gallery__laptop {
+    grid-column: 1 / span 6;
+    aspect-ratio: 4 / 5;
+  }
+
+  .gallery__grass {
+    grid-column: 7 / span 6;
+    aspect-ratio: 5 / 4;
+  }
+}
+
 /* ---------- Hjälpklasser ---------- */
 .visually-hidden {
   position: absolute;
