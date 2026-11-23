@@ -88,7 +88,7 @@ Varje steg avslutas med att jag jämför mot Figma i webbläsaren (375px och 144
 ## Öppna frågor
 
 - "Read more" (mobil, projektsektionen) får sin länk senare – just nu `href="#"`.
-- `about-flowers.jpg` och `about-portrait.jpg` är tillfälliga 1x-renderingar från Figma. Ersätt med Media Card-lagren exporterade som JPG i 2x (samma filnamn) för skarpa bilder på retinaskärmar. `portrait.png` används inte längre.
+- `about-portrait.jpg` saknar Figmas bildfilter (exponering +21, kontrast −33, skuggor +36, högdagrar −19, mättnad +8) och utsnittet skiljer sig lite. Exakt version: exportera porträttets Media Card-lager i About me som JPG 2x och spara som `assets/originals/about-portrait-figma-2x.jpg`. Originalfoton ligger i `assets/originals/` (ignoreras av git).
 - Projektbilderna har Unsplash+-vattenstämplar – licensierade versioner behövs innan sajten publiceras.
 - Hur ser designen ut mellan 375 och 1440? Figma har bara de två ramarna, så mellanläget tolkar jag
   (se Responsivitet ovan) och vi stämmer av i steg 10.

@@ -3,3 +3,6 @@
 
 # Originalpaket för typsnitt (bara webbfilerna i assets/fonts används)
 assets/fonts/Satoshi_Complete/
+
+# Originalbilder (webbversionerna i assets/images genereras från dessa)
+assets/originals/
